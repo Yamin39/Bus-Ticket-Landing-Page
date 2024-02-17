@@ -12,9 +12,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header class="container w-11/12 mx-auto my-12">
+    <header class="max-w-[1536px] w-11/12 mx-auto my-4 md:my-6 lg:my-8">
       <!-- nav bar -->
-      <nav class="navbar bg-base-100">
+      <nav class="navbar pl-0 bg-base-100">
         <div class="navbar-start">
           <a class="text-4xl font-extrabold text-primary-dark">P-Ticket</a>
         </div>
@@ -48,6 +48,58 @@
           </button>
         </div>
       </nav>
+
+      <!-- banner section -->
+      <section class="text-center bg-[url(./images/banner.png)] bg-no-repeat bg-cover bg-center rounded-3xl p-16 pb-32 mt-5 md:mt-9">
+        <h1 class="text-4xl lg:text-6xl font-extrabold leading-10 md:leading-[5.375rem] text-white">
+          End-to-End Travel with <span class="text-primary-green block">P Paribahan</span>
+        </h1>
+        <p class="md:w-[43.125rem] mx-auto font-inter text-lg leading-normal md:leading-7 text-white mt-4 mb-8">
+          Travel seamlessly with P Paribahan! Book affordable bus tickets online. Enjoy comfort, convenience, and safe journeys with us today!
+        </p>
+        <a href="#PH-Paribahan" class="btn bg-primary-green hover:bg-[#20f100] text-xl font-bold px-[1.875rem] py-5 h-auto rounded-xl border-none"
+          >Buy Tickets</a
+        >
+      </section>
+      <!-- banner stats -->
+      <section class="flex flex-wrap lg:flex-nowrap justify-center items-center gap-6 relative -top-16 px-8">
+        <!-- registered users -->
+        <div
+          class="bg-white font-inter flex flex-col lg:flex-row text-center lg:text-left gap-6 items-center lg:w-fit py-8 px-10 border-b-[3px] border-primary-green rounded-3xl"
+        >
+          <div>
+            <img src="./images/people.png" alt="people" />
+          </div>
+          <div class="space-y-2">
+            <h2 class="text-4xl font-bold">500K+</h2>
+            <p class="text-lg text-secondary-dark">Registered users</p>
+          </div>
+        </div>
+        <!-- Tickets sold -->
+        <div
+          class="bg-white font-inter flex flex-col lg:flex-row text-center lg:text-left gap-6 items-center lg:w-fit py-8 px-10 border-b-[3px] border-primary-green rounded-3xl"
+        >
+          <div>
+            <img src="./images/ticket-cupon.png" alt="ticket" />
+          </div>
+          <div class="space-y-2">
+            <h2 class="text-4xl font-bold">1.7 lacks</h2>
+            <p class="text-lg text-secondary-dark">Tickets sold</p>
+          </div>
+        </div>
+        <!-- Rental partners -->
+        <div
+          class="bg-white font-inter flex flex-col lg:flex-row text-center lg:text-left gap-6 items-center lg:w-fit py-8 px-10 border-b-[3px] border-primary-green rounded-3xl"
+        >
+          <div>
+            <img src="./images/stoppage.png" alt="stoppage" />
+          </div>
+          <div class="space-y-2">
+            <h2 class="text-4xl font-bold">80K+</h2>
+            <p class="text-lg text-secondary-dark">Rental partners</p>
+          </div>
+        </div>
+      </section>
     </header>
     <main></main>
     <footer></footer>
