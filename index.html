@@ -12,7 +12,43 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header></header>
+    <header class="container w-11/12 mx-auto my-12">
+      <!-- nav bar -->
+      <nav class="navbar bg-base-100">
+        <div class="navbar-start">
+          <a class="text-4xl font-extrabold text-primary-dark">P-Ticket</a>
+        </div>
+        <div class="navbar-center hidden md:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="text-lg font-medium">Home</a></li>
+            <li><a class="text-lg font-medium">About</a></li>
+            <li><a class="text-lg font-medium">Destination</a></li>
+            <li><a class="text-lg font-medium">Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost md:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-fit">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <button
+            class="btn bg-[#1DD1001A] hover:bg-[#59b74929] border border-[#1DD10066] hover:border-[#1DD10066] text-primary-green text-xl font-bold px-[1.875rem] py-4 h-auto"
+          >
+            Bus
+            <img src="./images/bus-icon.png" />
+          </button>
+        </div>
+      </nav>
+    </header>
     <main></main>
     <footer></footer>
     <!-- scripts -->
