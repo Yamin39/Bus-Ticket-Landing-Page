@@ -25,7 +25,7 @@ body {
 }
 
 /* ticket buttons */
-.seat-container .btn {
+#seat-container .btn {
   height: auto;
   color: #03071280;
   font-weight: 500;
@@ -39,9 +39,15 @@ body {
   justify-content: space-between;
 }
 
+/* selected btn */
+.selected {
+  background-color: #1dd100 !important;
+  color: #fff !important;
+}
+
 /* fixing ticket seat buttons for medium and smaller devices */
 @media screen and (max-width: 990px) {
-  .seat-container .btn {
+  #seat-container .btn {
     padding: 1rem 2.175rem;
   }
 }
@@ -52,7 +58,7 @@ body {
     font-size: 3.5vw;
   }
 
-  .seat-container .btn {
+  #seat-container .btn {
     padding: 1rem 2rem;
   }
 }
