@@ -126,7 +126,7 @@
           </div>
           <!-- Couple 20 -->
           <div class="flex items-center bg-[#F78C9C] rounded-3xl px-7 sm:px-[3.25rem] lg:px-6 xl:px-[3.25rem]">
-            <div class="font-inter mr-7 sm:mr-12 space-y-2">
+            <div class="font-inter mr-7 sm:mr-12 my-4 space-y-2">
               <h2 class="text-[#030712CC] font-black text-3xl sm:text-[2.5rem] lg:text-[2.3rem] xl:text-[2.5rem]">20% OFF</h2>
               <p class="font-semibold text-lg sm:text-xl text-[#030712CC]">on your next purchase</p>
               <p class="font-medium text-sm sm:text-lg text-[#03071280]">use by January 2024</p>
@@ -214,6 +214,156 @@
             <img class="inline" src="./images/fare.png" alt="Taka" />
             <h2 class="text-primary-dark font-bold text-[2rem] mt-4">550 Taka</h2>
             <p class="text-secondary-dark font-semibold text-2xl">Per Seat</p>
+          </div>
+        </section>
+
+        <!-- buy ticket -->
+        <section class="max-w-[1536px] w-11/12 mx-auto flex flex-col md:flex-row bg-white rounded-3xl p-8 mt-6">
+          <!-- part 1 -->
+          <div class="font-inter pr-8 flex-1 md:border-r-2 border-dashed border-[#03071233]">
+            <!-- part 1.1 -->
+            <div>
+              <div class="border-b-2 border-dashed border-[#03071233] py-6">
+                <p class="font-raleway font-semibold text-primary-dark text-2xl">Select Your Seat</p>
+              </div>
+              <div class="flex justify-between gap-2 border-b-2 border-dashed border-[#03071233] py-4">
+                <div class="flex items-center gap-2">
+                  <img src="./images/seat-gray.png" alt="" />
+                  <p class="text-[#03071280] font-medium text-lg">Available</p>
+                </div>
+                <div class="flex items-center gap-2">
+                  <img src="./images/seat-green-filled.png" alt="" />
+                  <p class="text-primary-green font-medium text-lg">Selected</p>
+                </div>
+              </div>
+            </div>
+            <!-- part 1.2 -->
+            <div>
+              <div class="flex justify-end py-6">
+                <img class="bg-[#0307121A] rounded-xl px-9 py-3" src="./images/wheel.png" alt="Wheel" />
+              </div>
+              <div class="seat-container flex gap-9 sm:gap-16 justify-between">
+                <!-- left side -->
+                <div class="flex">
+                  <!-- row name -->
+                  <div class="text-[#03071280] text-lg font-medium space-y-6 mr-4">
+                    <p class="py-4">A</p>
+                    <p class="py-4">B</p>
+                    <p class="py-4">C</p>
+                    <p class="py-4">D</p>
+                    <p class="py-4">E</p>
+                    <p class="py-4">F</p>
+                    <p class="py-4">G</p>
+                    <p class="py-4">H</p>
+                    <p class="py-4">I</p>
+                    <p class="py-4">J</p>
+                  </div>
+                  <!-- seat 1,2 -->
+                  <div class="grid grid-cols-2 gap-x-8 gap-y-6">
+                    <button class="btn">A1</button>
+                    <button class="btn">A2</button>
+                    <button class="btn">B1</button>
+                    <button class="btn">B2</button>
+                    <button class="btn">C1</button>
+                    <button class="btn">C2</button>
+                    <button class="btn">D1</button>
+                    <button class="btn">D2</button>
+                    <button class="btn">E1</button>
+                    <button class="btn">E2</button>
+                    <button class="btn">F1</button>
+                    <button class="btn">F2</button>
+                    <button class="btn">G1</button>
+                    <button class="btn">G2</button>
+                    <button class="btn">H1</button>
+                    <button class="btn">H2</button>
+                    <button class="btn">I1</button>
+                    <button class="btn">I2</button>
+                    <button class="btn">J1</button>
+                    <button class="btn">J2</button>
+                  </div>
+                </div>
+                <!-- right side -->
+                <!-- seat 3,4 -->
+                <div class="grid grid-cols-2 gap-x-8 gap-y-6">
+                  <button class="btn">A3</button>
+                  <button class="btn">A4</button>
+                  <button class="btn">B3</button>
+                  <button class="btn">B4</button>
+                  <button class="btn">C3</button>
+                  <button class="btn">C4</button>
+                  <button class="btn">D3</button>
+                  <button class="btn">D4</button>
+                  <button class="btn">E3</button>
+                  <button class="btn">E4</button>
+                  <button class="btn">F3</button>
+                  <button class="btn">F4</button>
+                  <button class="btn">G3</button>
+                  <button class="btn">G4</button>
+                  <button class="btn">H3</button>
+                  <button class="btn">H4</button>
+                  <button class="btn">I3</button>
+                  <button class="btn">I4</button>
+                  <button class="btn">J3</button>
+                  <button class="btn">J4</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- part 2 -->
+          <div class="md:w-[40%] font-inter ml-6">
+            <div class="border-b-2 border-dashed border-[#03071233] py-6">
+              <p class="font-raleway font-semibold text-primary-dark text-2xl">Select Your Seat</p>
+            </div>
+            <div>
+              <!-- table -->
+              <div class="p-8 px-4 md:px-8 rounded-xl bg-[#F7F8F8] my-6">
+                <div class="flex justify-between small-title pb-4 border-b-2 border-dashed border-[#03071233]">
+                  <p>Seat <span class="text-white font-bold text-xs bg-primary-green px-2 rounded-md">0</span></p>
+                  <p>Class</p>
+                  <p>Price</p>
+                </div>
+                <ul id="table-container" class="text-secondary-dark border-b border-[#03071233] py-4 space-y-4">
+                  <li>
+                    <p>C2</p>
+                    <p>Economoy</p>
+                    <p>550</p>
+                  </li>
+                </ul>
+                <div class="small-title flex justify-between py-4">
+                  <p>Total Price</p>
+                  <p>BDT <span>1100</span></p>
+                </div>
+                <div class="flex bg-white rounded-xl p-2">
+                  <input
+                    class="flex-1 min-w-12 pl-4 bg-transparent outline-none text-[#03071266] placeholder:text-[#03071266]"
+                    type="text"
+                    placeholder="Have any coupon?"
+                  />
+                  <button class="btn border-none px-4 py-2 bg-primary-green hover:bg-[#20f100] text-white font-semibold">Apply</button>
+                </div>
+                <div class="small-title flex justify-between py-6">
+                  <p>Grand Total</p>
+                  <p>BDT <span>1100</span></p>
+                </div>
+              </div>
+              <!-- table end -->
+              <form class="flex flex-col font-inter">
+                <!-- passenger-name -->
+                <label for="passenger-name" class="font-semibold text-primary-dark mb-4">Passenger Name*</label>
+                <input id="passenger-name" type="text" placeholder="Enter your name" class="input input-bordered w-full" />
+                <!-- Phone Number -->
+                <label for="phone-number" class="font-semibold text-primary-dark mb-4 mt-6">Phone Number*</label>
+                <input id="phone-number" type="tel" placeholder="Enter your phone number" class="input input-bordered w-full" required />
+                <!-- Email -->
+                <label for="email" class="font-semibold text-primary-dark mb-4 mt-6">Email ID</label>
+                <input id="email" type="email" placeholder="Enter your email id" class="input input-bordered w-full" />
+                <button class="btn bg-primary-green font-extrabold text-white text-xl my-6 font-raleway hover:bg-[#20f100] border-none">Next</button>
+                <div class="flex justify-around gap-1">
+                  <a href="#" class="text-secondary-dark underline">Terms and Conditions</a>
+                  <a href="#" class="text-secondary-dark underline">Cancellation Policy</a>
+                </div>
+              </form>
+            </div>
           </div>
         </section>
       </section>

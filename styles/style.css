@@ -1,3 +1,4 @@
+/* fonts */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:wght@300;400;500;700&display=swap");
 
 body {
@@ -16,9 +17,42 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/* custom utility classes */
+.small-title {
+  color: rgb(3, 7, 18);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* ticket buttons */
+.seat-container .btn {
+  height: auto;
+  color: #03071280;
+  font-weight: 500;
+  font-size: 1.125rem;
+  padding: 1rem 2.75rem;
+}
+
+/* table-container */
+#table-container li {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* fixing ticket seat buttons for medium and smaller devices */
+@media screen and (max-width: 990px) {
+  .seat-container .btn {
+    padding: 1rem 2.175rem;
+  }
+}
+
 /* media query for small device */
 @media screen and (max-width: 640px) {
   html {
     font-size: 3.5vw;
+  }
+
+  .seat-container .btn {
+    padding: 1rem 2rem;
   }
 }
