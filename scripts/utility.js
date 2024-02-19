@@ -18,3 +18,11 @@ function displayTotal(total) {
   totalPriceDisplay.innerText = total;
   grandTotalDisplay.innerText = total - discount;
 }
+
+// next btn functionalities
+function enableNextBtn(btnArrayLength) {
+  const phoneNumber = document.getElementById("phone-number");
+  if (phoneNumber.value.length > 0 && btnArrayLength > 0) {
+    document.getElementById("next-btn").removeAttribute("disabled");
+  }
+}

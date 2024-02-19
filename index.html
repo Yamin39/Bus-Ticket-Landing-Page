@@ -16,7 +16,7 @@
       <!-- nav bar -->
       <nav class="navbar pl-0 bg-base-100">
         <div class="navbar-start">
-          <a class="text-4xl font-extrabold text-primary-dark">P-Ticket</a>
+          <h2 class="text-4xl font-extrabold text-primary-dark">P-Ticket</h2>
         </div>
         <div class="navbar-center hidden md:flex">
           <ul class="menu menu-horizontal px-1">
@@ -149,7 +149,7 @@
         </div>
       </section>
       <!-- P.H Paribahan section -->
-      <section id="phParibahan-container" class="bg-[#F7F8F8] border-t-2 border-primary-green rounded-[44px] sm:rounded-t-[88px] py-12 sm:py-28">
+      <section id="phParibahan-container" class="bg-[#F7F8F8] border-t-2 border-primary-green rounded-t-[44px] sm:rounded-t-[88px] py-12 sm:py-28">
         <div class="text-center max-w-[1536px] w-11/12 mx-auto">
           <h2 class="text-primary-dark text-[2.5rem] font-bold">P.H Paribahan</h2>
           <p class="lg:w-[43.125rem] mx-auto font-inter text-lg leading-normal md:leading-7 text-secondary-dark mt-4 mb-8">
@@ -359,8 +359,10 @@
                 <label for="email" class="font-semibold text-primary-dark mb-4 mt-6">Email ID</label>
                 <input id="email" type="email" placeholder="Enter your email id" class="input input-bordered w-full" />
                 <button
+                  id="next-btn"
                   onclick="my_modal_4.showModal()"
                   class="btn bg-primary-green font-extrabold text-white text-xl my-6 font-raleway hover:bg-[#20f100] border-none"
+                  disabled
                 >
                   Next
                 </button>
@@ -386,14 +388,52 @@
           <p class="font-light text-xl mt-1 sm:mt-2">Shortly you will find a confirmation in your email.</p>
           <div class="modal-action">
             <form method="dialog">
-              <button class="btn bg-green-600 hover:bg-green-500 h-auto font-semibold text-xl text-white rounded-3xl px-14">Continue</button>
+              <button onclick="window.location.reload()" class="btn bg-green-600 hover:bg-green-500 h-auto font-semibold text-xl text-white rounded-3xl px-14">
+                Continue
+              </button>
             </form>
           </div>
         </div>
       </dialog>
     </main>
 
-    <footer></footer>
+    <footer class="bg-primary-dark">
+      <div class="max-w-[1536px] w-11/12 mx-auto py-28 text-white">
+        <div class="flex flex-col sm:flex-row justify-between items-center border-b-2 border-dashed border-[#FFFFFF4D] pb-12 mb-8">
+          <div class="text-center sm:text-left">
+            <h2 class="text-4xl font-extrabold">P-Ticket</h2>
+            <p class="text-[#FFFFFFCC] font-inter text-lg leading-7 mt-4">
+              Explore hassle-free bus bookings with P Ticket. <br class="hidden sm:block" />
+              Your journey starts here.
+            </p>
+          </div>
+          <div class="flex flex-col gap-5 items-end">
+            <h4 class="font-semibold text-xl mt-8 sm:mt-0">Download our app</h4>
+            <div>
+              <img src="./images/playstore.png" alt="play store" />
+            </div>
+          </div>
+        </div>
+        <div class="font-inter flex flex-col sm:flex-row gap-4 justify-between items-center">
+          <div>
+            <p class="font-medium text-[#FFFFFFB3]">@all rights reserved, P-Ticket services limited.2024</p>
+          </div>
+          <div>
+            <ul class="font-medium flex gap-8">
+              <li>
+                <a href="#">Terms & condition</a>
+              </li>
+              <li>
+                <a href="#">Return & refund policy</a>
+              </li>
+              <li>
+                <a href="#">Privacy policy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- scripts -->
     <script src="./scripts/utility.js"></script>
     <script src="./scripts/script.js"></script>

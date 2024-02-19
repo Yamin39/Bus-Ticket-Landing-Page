@@ -43,10 +43,12 @@ for (const button of buttons) {
       alert("You cannot select more than 4 seats");
     }
   });
+
+  // enable next btn
+  enableNextBtn(count);
 }
 
 // coupon discount
-
 document.getElementById("applyBtn").addEventListener("click", function () {
   const couponContainer = document.getElementById("coupon-field-container");
   const couponField = document.getElementById("coupon-field");
