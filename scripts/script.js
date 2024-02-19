@@ -19,6 +19,7 @@ const btnArray = [];
 let count = 0;
 let seatLeft = 40;
 let total = 0;
+let isSeatSelected = false;
 
 // seat btn functionalities
 for (const button of buttons) {
@@ -34,6 +35,8 @@ for (const button of buttons) {
       seatLeftDisplay.innerText = seatLeft;
       countDisplay.innerText = count;
       displayTotal(total);
+      isSeatSelected = true;
+      enableNextBtn(isSeatSelected, isNumberEntered);
 
       // enable coupon code on selecting 4 seats
       if (btnArray.length === 4) {
@@ -43,10 +46,20 @@ for (const button of buttons) {
       alert("You cannot select more than 4 seats");
     }
   });
-
-  // enable next btn
-  enableNextBtn(count);
 }
+
+// next btn functionalities
+let isNumberEntered = false;
+document.getElementById("phone-number").addEventListener("keyup", function (event) {
+  const numberCount = event.target.value.length;
+  if (numberCount > 0) {
+    isNumberEntered = true;
+  } else {
+    isNumberEntered = false;
+  }
+  enableNextBtn(isSeatSelected, isNumberEntered);
+  disableNextBtn(isNumberEntered);
+});
 
 // coupon discount
 document.getElementById("applyBtn").addEventListener("click", function () {

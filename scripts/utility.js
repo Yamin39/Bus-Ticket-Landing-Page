@@ -19,10 +19,16 @@ function displayTotal(total) {
   grandTotalDisplay.innerText = total - discount;
 }
 
-// next btn functionalities
-function enableNextBtn(btnArrayLength) {
-  const phoneNumber = document.getElementById("phone-number");
-  if (phoneNumber.value.length > 0 && btnArrayLength > 0) {
+// enable next btn
+function enableNextBtn(isSeatSelected, isNumberEntered) {
+  if (isSeatSelected && isNumberEntered) {
     document.getElementById("next-btn").removeAttribute("disabled");
+  }
+}
+
+// disable next btn
+function disableNextBtn(isNumberEntered) {
+  if (!isNumberEntered) {
+    document.getElementById("next-btn").setAttribute("disabled", false);
   }
 }
