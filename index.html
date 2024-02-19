@@ -327,13 +327,20 @@
                   <p>Total Price</p>
                   <p>BDT <span id="total-price-display">0</span></p>
                 </div>
-                <div class="flex bg-white rounded-xl p-2">
+                <div id="discountContainer" class="hidden">
+                  <div class="small-title flex justify-between py-4">
+                    <p>Discount</p>
+                    <p>BDT <span id="discount-price-display">0</span></p>
+                  </div>
+                </div>
+                <div id="coupon-field-container" class="flex bg-white rounded-xl p-2">
                   <input
+                    id="coupon-field"
                     class="flex-1 min-w-12 pl-4 bg-transparent outline-none text-[#03071266] placeholder:text-[#03071266]"
                     type="text"
                     placeholder="Have any coupon?"
                   />
-                  <button class="btn border-none px-4 py-2 bg-primary-green hover:bg-[#20f100] text-white font-semibold">Apply</button>
+                  <button id="applyBtn" class="btn border-none px-4 py-2 bg-primary-green hover:bg-[#20f100] text-white font-semibold" disabled>Apply</button>
                 </div>
                 <div class="small-title flex justify-between py-6">
                   <p>Grand Total</p>
@@ -351,7 +358,12 @@
                 <!-- Email -->
                 <label for="email" class="font-semibold text-primary-dark mb-4 mt-6">Email ID</label>
                 <input id="email" type="email" placeholder="Enter your email id" class="input input-bordered w-full" />
-                <button class="btn bg-primary-green font-extrabold text-white text-xl my-6 font-raleway hover:bg-[#20f100] border-none">Next</button>
+                <button
+                  onclick="my_modal_4.showModal()"
+                  class="btn bg-primary-green font-extrabold text-white text-xl my-6 font-raleway hover:bg-[#20f100] border-none"
+                >
+                  Next
+                </button>
                 <div class="flex justify-around gap-1">
                   <a href="#" class="text-secondary-dark underline">Terms and Conditions</a>
                   <a href="#" class="text-secondary-dark underline">Cancellation Policy</a>
@@ -361,6 +373,24 @@
           </div>
         </section>
       </section>
+
+      <!-- modal -->
+      <dialog id="my_modal_4" class="modal">
+        <div class="modal-box lg:w-[65%] max-w-5xl font-roboto text-center flex flex-col justify-center items-center py-5 sm:py-12">
+          <img src="./images/success.png" alt="success" />
+          <h3 class="font-bold text-green-600 text-2xl my-2 sm:my-6">SUCCESS</h3>
+          <p class="font-medium text-xl text-[#4A4A4A]">
+            Thank you for Booking Our Bus Seats. <br />
+            We are working hard to find the best service and deals for you.
+          </p>
+          <p class="font-light text-xl mt-1 sm:mt-2">Shortly you will find a confirmation in your email.</p>
+          <div class="modal-action">
+            <form method="dialog">
+              <button class="btn bg-green-600 hover:bg-green-500 h-auto font-semibold text-xl text-white rounded-3xl px-14">Continue</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
     </main>
 
     <footer></footer>

@@ -11,10 +11,10 @@ function appendTicket(ticketName) {
 }
 
 // calculate price
-function calculate(count) {
+function displayTotal(total) {
   const totalPriceDisplay = document.getElementById("total-price-display");
   const grandTotalDisplay = document.getElementById("grand-total-display");
-  const totalPrice = count * 550;
-  totalPriceDisplay.innerText = totalPrice;
-  grandTotalDisplay.innerText = totalPrice;
+  const discount = document.getElementById("discount-price-display").innerText;
+  totalPriceDisplay.innerText = total;
+  grandTotalDisplay.innerText = total - discount;
 }

@@ -53,7 +53,7 @@ body {
 }
 
 /* media query for small device */
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 639px) {
   html {
     font-size: 3.5vw;
   }
